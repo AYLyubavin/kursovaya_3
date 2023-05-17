@@ -14,11 +14,11 @@ def test_data():
                          'description': 'Перевод организации', 'to': 'Счет 11776614605963066702'},
             {'id': 587085106, 'state': 'EXECUTED', 'date': '2018-03-23T10:45:06.972075',
                          'operationAmount': {'amount': '48223.05', 'currency': {'name': 'руб.', 'code': 'RUB'}},
-                         'description': 'Открытие вклада', 'to': 'Счет 41421565395219882431'},]
+                         'description': 'Открытие вклада', 'to': 'Счет 41421565395219882431'}]
 
 
 def test_load_data(test_data):
-    data = load_data("./tests/operations.json")
+    data = load_data("operations.json")
     assert isinstance(data, list)
 
 def test_get_filtered_data(test_data):
