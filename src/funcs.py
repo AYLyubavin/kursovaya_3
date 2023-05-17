@@ -50,7 +50,7 @@ def masked_from(from_param):
     elif len(from_param) == 9:
         return from_param
     else:
-        return f"{from_param[:-12]} {from_param[-11:-10]}** **** {from_param[-4:]} ->"
+        return f"{from_param[:-12]} {from_param[-11:-10]}** **** {from_param[-4:]}"
 
 def masked_to(to_param):
     """Закрывает часть информации в выводе в соответствие с требованиями"""
