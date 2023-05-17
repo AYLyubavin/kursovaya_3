@@ -37,7 +37,7 @@ def test_date_formatted(test_data):
     assert date_formatted(n) == [{'date': '08.12.2019', 'description': 'Открытие вклада', 'from': 'Not found', 'to': 'Счет 90424923579946435907', 'amount': '41096.24', 'currency': 'USD'}]
 
 def test_masked_from(test_data):
-    assert masked_from('Visa Classic 2842878893689012') == "Visa Classic 2842 7** **** 9012 ->"
+    assert masked_from('Visa Classic 2842878893689012') == "Visa Classic 2842 7** **** 9012"
     assert masked_from('Счет 27248529432547658655') == "Счет **8655"
     assert masked_from("Not found") == "Not found"
 
